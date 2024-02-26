@@ -27,11 +27,11 @@ it("should return undefined when first parameter is correct and second is not ",
     
     })
 
-    it("should return undefined when first parameter is correct and second is not and is float number ",() => {
+    it("should return undefined when first parameter is correct and second is float number ",() => {
 
         // Arrange
         const firstCorrect = 'some string';
-        const secondIncorrect = '10.5';
+        const secondIncorrect = 10.5;
         // Act
         const undefinedResult = lookupChar(firstCorrect,secondIncorrect)
         // Assert

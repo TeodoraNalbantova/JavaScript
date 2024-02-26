@@ -313,7 +313,20 @@ describe("mathEnforcer", () => {
             //act
             const result = mathEnforcer.sum(param1,param2);
             //assert
-            expect(result).to.be.closeTo(0.1,0.01);
+            expect(result).to.be.eql(0.1);
+
+        })
+
+        
+        it("should return correct result when param1 is corect floating number and param 2 is correct", () => {
+
+            //arrange
+            const param1 = 2.5;
+            const param2 = 2;
+            //act
+            const result = mathEnforcer.sum(param1,param2);
+            //assert
+            expect(result).to.be.eql(4.5);
 
         })
 
